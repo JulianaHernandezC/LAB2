@@ -6,16 +6,6 @@ DIRECTORIO="/Users/julianahernandez/Desktop/Universidad/Primer Semstre 2024/Sist
 read -p "ingrese patron: " PATRON 
 read -p "ingrese nombre del archivo: " NOMBRE 
 
-if[ -d $PATRON ]
-    echo "no se puede renombrar" 
-
-fi
-
-if [ ! -d "$DIRECTORIO" ]; then
-    echo "El directorio '$DIRECTORIO' no existe."
-    exit 1
-fi
-
 # Confirmar con el usuario antes de realizar los cambios
 echo "Este script renombrará todos los archivos que coincidan con el patrón '$PATRON' a '$NOMBRE' en el directorio '$DIRECTORIO'."
 read -p "¿Desea continuar? (s/n): " CONFIRMAR
